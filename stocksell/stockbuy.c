@@ -8,15 +8,13 @@
 #include <string.h>
 // Starter Code
 
-
-int first_repeat(int arr[],int n)
+int maximum_profit(int prices[],int n)
 {
-   
-    int repeat_element = -1;
-    // Write your code here without removing the existing code
-    // the variables arr contains the array of integer  n is the size of an array.
-    // modified the variable repeat_element contain the output of the program in integer format..
-	return repeat_element;
+    int maxi_value =-1;
+    //Write your code here without removing the existing code.
+	//the variable 'arr' contains array of integers of size n.
+	//modified the variable 'maxi_value' contain the output of the program in integer format.
+    return maxi_value;
 }
 
 
@@ -28,16 +26,15 @@ int main()
 
     int n;
     scanf("%d", &n);
+    int t=n-1;
     int i = 0;
 
-    arr = (int *)malloc(n * sizeof(int));
-    int b[100];
-
+    arr = (int *)malloc(t * sizeof(int));
     scanf("%s", str);
     char *token = strtok(str, "[");
     token = strtok(token, "]");
     token = strtok(token, ",");
-    if (i < n)
+    if (i < t)
     {
         while (token != NULL)
         {
@@ -48,9 +45,8 @@ int main()
             i++;
         }
     }
-    int ans = first_repeat(arr, n);
+    int ans = maximum_profit(arr, n);
     printf("%d", ans);
 
     return 0;
 }
-

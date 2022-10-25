@@ -9,14 +9,14 @@
 // Starter Code
 
 
-int first_repeat(int arr[],int n)
+int max_differnce(int arr[],int n)
 {
    
-    int repeat_element = -1;
+    int maximum_index = -1;
     // Write your code here without removing the existing code
-    // the variables arr contains the array of integer  n is the size of an array.
-    // modified the variable repeat_element contain the output of the program in integer format..
-	return repeat_element;
+    // the variables arr contains the array of integer and n is the size of an array.
+    // modified the variable maximum_index contain the output of the program in integer format..
+	return maximum_index;
 }
 
 
@@ -48,7 +48,7 @@ int main()
             i++;
         }
     }
-    int ans = first_repeat(arr, n);
+    int ans = max_differnce(arr, n);
     printf("%d", ans);
 
     return 0;

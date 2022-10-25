@@ -5,12 +5,12 @@ using namespace std;
 
 class Solution {
 public:
-long long  trapping_water(std::vector<int>&arr,int n)
+long long  trapping_water(std::vector<int>&heights,int n)
 {
     long long maximum_amount= -1;
     //Write your code here without removing the existing code
     //the variable 'arr' contains array of integers of size n.
-	//modified the variable 'maximum_amount' contain the output of the program in integer format.
+	//modified the variable 'maximum_amount' contain the output of the program in long format.
     return maximum_amount;
 }
 };

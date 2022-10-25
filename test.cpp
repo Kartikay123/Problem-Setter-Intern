@@ -5,15 +5,18 @@ int main() {
 	// your code goes here
 	int c=0;
     cout<<"[";
-for(int i=1530;i>=0;i-=1)
+for(int i=2;i<=906;i+=2)
 {
+	
+
 cout<<i<<',';
 c++;
-if(c==1458)
-break;
+// if(c==567)
+// break;
 }
 
 cout<<"]";
 cout<<c<<endl;
 	return 0;
 }
+ 

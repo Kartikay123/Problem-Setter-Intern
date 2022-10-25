@@ -9,14 +9,11 @@
 // Starter Code
 
 
-int first_repeat(int arr[],int n)
+int* find_elements(int arr[],int n)
 {
-   
-    int repeat_element = -1;
-    // Write your code here without removing the existing code
-    // the variables arr contains the array of integer  n is the size of an array.
-    // modified the variable repeat_element contain the output of the program in integer format..
-	return repeat_element;
+    static int missing_repeat[2];
+   missing_repeat
+    return missing_repeat;
 }
 
 
@@ -31,8 +28,6 @@ int main()
     int i = 0;
 
     arr = (int *)malloc(n * sizeof(int));
-    int b[100];
-
     scanf("%s", str);
     char *token = strtok(str, "[");
     token = strtok(token, "]");
@@ -48,8 +43,12 @@ int main()
             i++;
         }
     }
-    int ans = first_repeat(arr, n);
-    printf("%d", ans);
+    int *ans=find_elements(arr,n);
+    for (int i = 0; i<2; i++)
+    {
+        
+        printf("%d ",*(ans+i));
+    }
 
     return 0;
 }

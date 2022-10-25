@@ -5,19 +5,20 @@ using namespace std;
 
 class Solution {
 public:
-int find_missing(std::vector<int>&arr,int n)
+int max_differnce(std::vector<int>&arr,int n)
 {
-    int missing_element =-1;
-    //Write your code here without removing the existing code
-	//the variable 'arr' contains array of integers of size n-1.
-	//modified the variable 'missing_element' contain the output of the program in integer format.
-    return missing_element;
+    int maximum_index = -1;
+    // Write your code here without removing the existing code
+    // the variables 'arr' contains the array of integer and n is the size of an array.
+    // modified the variable maximum_index contain the output of the program in integer format..
+	return maximum_index;
 }
 };
 
 //Backend Code
 int main()
 {
+    
     int n;
     std::cin >> n;
     std::string s;
@@ -25,7 +26,9 @@ int main()
     std::istringstream iss{std::regex_replace(s, std::regex{R"(\[|\]|,)"}, " ")};
     std::vector<int> v = {std::istream_iterator<int>{iss}, std::istream_iterator<int>{}};
     Solution ob;
-    int ans = ob.find_missing(v, n);
+    int ans = ob.max_differnce(v, n);
     std::cout << ans << std::endl;
+
+    
     return 0;
 }

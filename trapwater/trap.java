@@ -13,13 +13,13 @@
 }
 class Solution
 {
-	public static long trapping_water(int arr[],int n)
+	public static long trapping_water(int heights[],int n)
         {
         
 			long maximum_amount = -1;
 			//Write your code here without removing the existing code
 			//the variable 'arr' contains array of integers of size n.
-			//modified the variable 'maximum_amount' contain the output of the program in integer format.
+			//modified the variable 'maximum_amount' contain the output of the program in long format.
 		    return maximum_amount;
         }
 }
