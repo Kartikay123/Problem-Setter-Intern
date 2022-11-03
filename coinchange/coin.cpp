@@ -3,30 +3,33 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-class Solution 
-{
+class Solution {
 public:
-int maximum_profit(std::vector<int>&prices,int n)
+int count_ways(std::vector<int>&arr,int n,int sum)
 {
-    int maxi_value =-1;
+    int minimum_coins= -1;
     //Write your code here without removing the existing code
-	//the variable 'arr' contains array of integers of size n.
-	//modified the variable 'maxi_value' contain the output of the program in integer format.
-    return maxi_value;
+    //the variable 'coins' contains array of integers of size n and an integer sum.
+    //modified the variable 'minimum_coins' contain the output of the program in integer format.
+    return minimum_coins;
 }
 };
 
 //Backend Code
 int main()
 {
-    int n;
+    
+    int n,sum;
     std::cin >> n;
     std::string s;
     std::cin >> s;
     std::istringstream iss{std::regex_replace(s, std::regex{R"(\[|\]|,)"}, " ")};
     std::vector<int> v = {std::istream_iterator<int>{iss}, std::istream_iterator<int>{}};
     Solution ob;
-    int ans = ob.maximum_profit(v, n);
+    std::cin >> sum;
+    int ans = ob.count_ways(v,n,sum);
     std::cout << ans << std::endl;
+
+    
     return 0;
 }
